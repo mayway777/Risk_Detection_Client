@@ -1,0 +1,20 @@
+body {
+  background-image: ('/background.jpg'); /* public 폴더에 있는 이미지 URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'font1';
+}
+@font-face {
+  font-family: 'font1';
+  src: url('./fonts/font1.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace, font1;
+}
