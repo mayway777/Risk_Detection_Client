@@ -1,7 +1,8 @@
 # 🚦 Real-time CCTV Accident Detection System
 
 YOLO 기반의 영상 처리 기술을 활용하여 **실시간으로 사고나 이상 상황을 감지**하고, 사용자에게 **자동 알림**을 제공하는 지능형 모니터링 시스템입니다.
-👉 [클라이언트 레포지토리 보기](https://github.com/mayway777/Risk_Detection_Server.git)
+---
+👉 [서버 레포지토리 보기](https://github.com/mayway777/Risk_Detection_Server.git)
 ---
 
 ## 📖 프로젝트 소개
