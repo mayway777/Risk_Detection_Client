@@ -16,7 +16,8 @@ YOLO 기반의 영상 처리 기술을 활용하여 **실시간으로 사고나 
 
 ## 🧠 시스템 흐름도
 
-![시스템흐름도](./images/system_flow.png)
+![image](https://github.com/user-attachments/assets/205afe33-4c11-45f9-b6fe-4c32ce380bc5)
+
 
 ---
 
@@ -54,7 +55,7 @@ YOLO 기반의 영상 처리 기술을 활용하여 **실시간으로 사고나 
 ## 💻 사용 기술
 
 - **백엔드**: FastAPI, Python, Firebase (Auth, Firestore)  
-- **프론트엔드**: Vue.js 또는 React, TailwindCSS  
+- **프론트엔드**: React
 - **영상처리**: YOLOv5, OpenCV  
 - **스트리밍**: RTMP, HLS  
 
