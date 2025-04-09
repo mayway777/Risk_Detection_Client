@@ -62,8 +62,6 @@ YOLO 기반의 영상 처리 기술을 활용하여 **실시간으로 사고나 
 
 ## ⚙️ 설치 및 실행 방법
 
-## ⚙️ 설치 및 실행 방법
-
 ### 1️⃣ Node.js 설치
 
 - 이 프로젝트는 **Node.js v16.14.0** 버전에서 개발되었습니다.  
@@ -73,19 +71,21 @@ YOLO 기반의 영상 처리 기술을 활용하여 **실시간으로 사고나 
 ```bash
 node -v
 # v16.14.0
-2️⃣ 프로젝트 클론 및 의존성 설치
-bash
-복사
-편집
+```
+
+### 2️⃣ 프로젝트 클론 및 의존성 설치
+
+```bash
 git clone https://github.com/your-id/your-repo.git
 cd your-repo
 npm install
-3️⃣ .env.local 설정
-루트 경로에 .env.local 파일을 생성하고 아래 값을 입력하세요.
+```
 
-env
-복사
-편집
+### 3️⃣ .env.local 설정
+
+루트 경로에 `.env.local` 파일을 생성하고 아래 내용을 입력하세요:
+
+```env
 NEXT_PUBLIC_FIREBASE_API_KEY=당신의_API_KEY
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=당신의_AUTH_DOMAIN
 NEXT_PUBLIC_FIREBASE_PROJECT_ID=당신의_PROJECT_ID
@@ -93,12 +93,13 @@ NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=당신의_STORAGE_BUCKET
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=당신의_SENDER_ID
 NEXT_PUBLIC_FIREBASE_APP_ID=당신의_APP_ID
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=당신의_MEASUREMENT_ID
-🔒 위 값들은 Firebase 콘솔에서 확인 가능합니다.
+```
 
-4️⃣ Firebase 설정 (firebase.js)
-js
-복사
-편집
+> 🔐 위 값들은 [Firebase 콘솔](https://console.firebase.google.com/)에서 확인 가능합니다.
+
+### 4️⃣ Firebase 설정 (firebase.js)
+
+```js
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"; 
@@ -123,14 +124,17 @@ const auth = getAuth(app);
 const storage = getStorage(app);
 
 export { db, auth, storage };
-5️⃣ 실행
-bash
-복사
-편집
-npm start
-개발 환경에서 동작 시 다음 명령어도 사용할 수 있습니다:
+```
 
-bash
-복사
-편집
-npm run dev 이걸 통째로 자르지말고 이어서 보내라고
+### 5️⃣ 실행
+
+```bash
+npm start
+```
+
+> 💡 개발 환경에서는 아래 명령어도 사용할 수 있습니다:
+
+```bash
+npm run dev
+```
+
